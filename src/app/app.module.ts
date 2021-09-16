@@ -19,6 +19,7 @@ import { FlexLayoutModule } from "@angular/flex-layout";
 /* Components */
 import { LogInComponent } from './components/log-in/log-in.component';
 import { RegisterComponent } from './components/register/register.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -34,6 +35,7 @@ import { RegisterComponent } from './components/register/register.component';
     BrowserModule,
     MatCardModule,
     AppRoutingModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     AngularMaterialModule,
     ReactiveFormsModule,
