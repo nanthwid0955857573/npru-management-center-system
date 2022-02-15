@@ -1,0 +1,329 @@
+/* You can add global styles to this file, and also import other style files */
+@page {
+    size: auto; /* auto is the initial value */
+    margin: 0mm; /* this affects the margin in the printer settings */
+  }
+  
+  html,
+  body {
+    background-color: #ffffff;
+    margin: 0px; /* this affects the margin on the html before sending to printer */
+    height: 100%;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+  }
+  
+  .cursor-pointer {
+    cursor: pointer;
+  }
+  
+  .flex-vert-center {
+    display: flex;
+    align-items: center;
+  }
+  
+  .content {
+    padding: 15px;
+  }
+  
+  .h-73px {
+    height: 73px !important;
+  }
+  
+  .h-100 {
+    height: 100% !important;
+  }
+  
+  .w-475 {
+    width: 475px !important;
+  }
+  
+  .w-100 {
+    width: 100% !important;
+  }
+  
+  .w-99 {
+    width: 100% !important;
+  }
+  
+  .w-80 {
+    width: 80% !important;
+  }
+  
+  .w-79 {
+    width: 79% !important;
+  }
+  
+  .w-78 {
+    width: 78% !important;
+  }
+  
+  .w-60 {
+    width: 60% !important;
+  }
+  
+  .w-20 {
+    width: 20% !important;
+  }
+  
+  .w-19 {
+    width: 19% !important;
+  }
+  
+  .w-18 {
+    width: 18% !important;
+  }
+  
+  .w-4 {
+    width: 4% !important;
+  }
+  
+  .no-margin {
+    margin: 0 !important;
+  }
+  
+  .pd-r-15 {
+    padding-right: 15px !important;
+  }
+  
+  .pd-t-22 {
+    padding-top: 22px !important;
+  }
+  
+  .pd-t-75 {
+    padding-top: 75px !important;
+  }
+  
+  .mg-r-15 {
+    margin-right: 15px !important;
+  }
+  
+  .mg-r-8 {
+    margin-right: 8px !important;
+  }
+  
+  .mg-auto {
+    margin: auto !important;
+  }
+  
+  .font-bold {
+    font-weight: bold !important;
+  }
+  
+  .is-number {
+    text-align: right;
+  }
+  
+  .is-center {
+    text-align: center;
+  }
+  
+  .is-text {
+    text-align: left;
+  }
+  
+  .center {
+    text-align: center;
+  }
+  
+  .box-shadow-none {
+    box-shadow: none;
+  }
+  
+  .invisible {
+    display: block;
+    visibility: hidden;
+    height: 0;
+    width: 0;
+  }
+  
+  .gray {
+    text-align: left;
+    color: #969696;
+  }
+  
+  .green {
+    color: #f0fff3;
+    background-color: #155724;
+  }
+  
+  .title-content {
+    margin: 5px 24px 0px 24px;
+    color: #9ebe3f;
+    font-weight: bold;
+    font-size: 18px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  
+  .comp-wrapper {
+    border-radius: 4px;
+    margin: 3px 24px 0px 24px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  
+  .mat-content-tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+  }
+  
+  .mat-ink-bar {
+    background-color: #59ec7a !important;
+  }
+  
+  /** start custom input group **/
+  :root {
+    --input-color: rgb(158, 190, 63);
+    --input-border: rgb(158, 190, 63);
+    --input-background: rgb(253, 253, 253);
+    --input-placeholder: rgb(158, 190, 63);
+    --input-border-focus: rgb(158, 190, 63);
+    --group-color: var(--input-border-focus);
+    --group-border: var(--input-border);
+    --group-background: #eef4ff;
+    --group-color-focus: #fff;
+    --group-border-focus: var(--input-border-focus);
+    --group-background-focus: #678efe;
+  }
+  .form-field {
+    display: block;
+    // width: 100%;
+    padding: 8px 8px;
+    // line-height: 25px;
+    font-size: 11px;
+    font-weight: 500;
+    font-family: inherit;
+    border-radius: 4px;
+    -webkit-appearance: none;
+    // color: var(--input-color);
+    border: 1px solid var(--input-border);
+    background: var(--input-background);
+    transition: border 0.3s ease;
+    &::placeholder {
+      color: var(--input-placeholder);
+    }
+    &:focus {
+      outline: none;
+      border-color: var(--input-border-focus);
+    }
+  }
+  
+  .custom-form-group {
+    input {
+      height: 9px;
+    }
+    position: relative;
+    display: flex;
+    & > span,
+    .form-field {
+      white-space: nowrap;
+      display: block;
+      &:not(:first-child):not(:last-child) {
+        border-radius: 0;
+      }
+      &:not(:first-child) {
+        margin-left: -1px;
+      }
+    }
+    .form-field {
+      position: relative;
+      z-index: 1;
+      flex: 1 1 auto;
+      width: 1%;
+      margin-top: 0px;
+      margin-bottom: 0;
+    }
+    & > span {
+      text-align: center;
+      padding: 8px 12px;
+      font-size: 11px;
+      line-height: 25px;
+      color: var(--group-color);
+      background: var(--group-background);
+      border: 1px solid var(--group-border);
+      transition: background 0.3s ease, border 0.3s ease, color 0.3s ease;
+    }
+    &:focus-within {
+      & > span {
+        color: var(--group-color-focus);
+        background: var(--group-background-focus);
+        border-color: var(--group-border-focus);
+      }
+    }
+  }
+  
+  .custom-form-group:hover > button.clear , .custom-form-group > input:focus + button.clear {
+    visibility: visible;
+  }
+  .custom-form-group:hover > button.clear-l , .custom-form-group > input:focus + button.clear-l {
+    visibility: visible;
+  }
+  .custom-form-group > button.clear {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 99;
+    height: 100%;
+  }
+  
+  .custom-form-group > button.clear-l {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    height: 100%;
+  }
+  .custom-form-group > button.clear .mat-button-wrapper  {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 99;
+    height: 100%;
+  }
+  
+  .custom-form-group > button.clear-l .mat-button-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    height: 100%;
+  }
+  .custom-form-group > button.clear-l .mat-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: small;
+    max-height: fit-content;
+  }
+  .custom-form-group > button.clear .mat-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: small;
+    max-height: fit-content;
+  }
+  
+  /** end custom input group **/
+  tr {
+    line-height: 11px;
+  }
+  
+  button.clear > span.mat-button-wrapper > mat-icon {
+    vertical-align: unset !important;
+  }
+  
+  span.mat-button-wrapper > svg {
+    vertical-align: unset !important;
+  }
+  
+  .download-example {
+    font-size: 10px;
+  }
+  

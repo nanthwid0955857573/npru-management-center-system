@@ -1,0 +1,35 @@
+<mat-toolbar color="primary">
+  <span class="fill-remaining-space">
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu" [overlapTrigger]="false">
+      <button mat-menu-item>
+        <mat-icon>home</mat-icon>
+        <span>Home</span>
+      </button>
+      <button mat-menu-item [routerLink]="['/menuPage']" routerLinkActive="router-link-active" >
+        <mat-icon>people_outline</mat-icon>
+        <span>Connecting</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>videocam</mat-icon>
+        <span>Let's talk</span>
+      </button>
+      <button mat-menu-item [routerLink]="['/login']" *ngIf="displayLogout" >
+        <mat-icon>exit_to_app</mat-icon>
+        <span>Logout</span>
+      </button>
+    </mat-menu>
+  </span>
+  <span class="fill-remaining-space">{{title}}</span>
+  <a mat-button routerLink="/register">Register</a>
+  <a mat-button routerLink="/login">Login</a>
+</mat-toolbar>
+<!-- <mat-sidenav-conatainer>
+  <mat-sidenav [(opened)]="opened"></mat-sidenav>
+<mat-sidenav-content>
+  <button (click)="opened=!opened"></button>
+</mat-sidenav-content>
+</mat-sidenav-conatainer> -->
+<router-outlet></router-outlet>

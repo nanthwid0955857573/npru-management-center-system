@@ -1,0 +1,98 @@
+.container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0;
+}
+
+mat-sidenav {
+  width: 250px;
+}
+
+mat-list-item {
+  a {
+    font-size: 12px;
+  }
+
+  label:hover {
+    cursor: pointer;
+  }
+}
+
+.sidenav__content--height {
+  min-height: 100vh;
+}
+
+mat-nav-list.sidenav__label--font-size {
+  label {
+    font-size: 12px;
+  }
+
+  mat-list-item {
+    label {
+      font-size: 12px;
+    }
+  }
+}
+
+.mat-expansion-panel-header {
+  padding: 0 16px;
+}
+
+.mat-expansion-panel:not([class*="mat-elevation-z"]) {
+  box-shadow: none;
+}
+
+.fill-remaining-space {
+  flex: 1 1 auto;
+}
+
+.active {
+  background-color: #e8e8e8;
+  font-weight: bold !important;
+}
+
+.custom-toolbar {
+  background-color: #b4d137;
+  padding: 0 5px;
+  font-size: 14px;
+}
+
+.menu-bar {
+  background-color: #d2d0d0;
+}
+
+.txt-location {
+  margin-right: 10px;
+  font-size: 17px;
+}
+
+.grid-tile-logo {
+  background-color: #b4d137;
+}
+
+.bottom-tab {
+  text-align: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 0 20px;
+}
+
+.padding-right {
+  padding-right: 10%;
+}
+
+.mat-button,
+.mat-icon-button,
+.mat-stroked-button,
+.mat-flat-button {
+  line-height: 30px;
+}
+
+.detail {
+  min-height: 500px;
+}
+.p {
+  top: 50%;
+}

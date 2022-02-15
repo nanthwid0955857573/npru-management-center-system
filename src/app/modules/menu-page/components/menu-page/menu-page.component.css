@@ -1,0 +1,129 @@
+.mat-container {
+    position: relative;
+    min-height: 200px;
+  }
+  
+  .mat-table-container {
+    position: relative;
+    max-height: 400px;
+    overflow: auto;
+  }
+  
+  .component-container {
+    position: relative;
+    min-height: 220px;
+  }
+  
+  .button-bg {
+    background-color: #b4d137;
+  }
+  
+  tr {
+    line-height: 17px !important;
+  }
+  .box {
+    position: relative;
+    top: 0;
+    opacity: 1;
+    float: left;
+    padding: 60px 50px 40px 50px;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    z-index: 5;
+    max-width: 330px;
+  }
+  .center {
+    text-align: center;
+  }  
+  .card {
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+}
+.card-img-top {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+}
+.app-toolbar {
+  position: sticky;
+  position: -webkit-sticky; /* For macOS/iOS Safari */
+  top: 0; /* Sets the sticky toolbar to be on top */
+  z-index: 1000; /* Ensure that your app's content doesn't overlap the toolbar */
+}
+.set-header12{
+  top: 0;
+}
+.flex-container {
+  text-align: center;
+}
+
+.container {
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item {
+  width: 15%;
+  height: 0px;
+}
+  mat-card{
+  
+  height: 50px;
+  }
+
+  /*
+  tem css
+   */
+
+   *{
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {
+    margin: 0 -5px;
+    width: 80%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    /* background-color: #f1f1f1; */
+  
+  }
