@@ -20,7 +20,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   selector: 'app-menu-page',
   template: `
 <div class="container">
-<p>hello world</p>
+<p>hello world dan tyler </p>
 <div class="row">
   <div class="column">
     <div class="card">
