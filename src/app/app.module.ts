@@ -28,6 +28,9 @@ import { MdbCheckboxModule } from 'mdb-angular-ui-kit/checkbox';
 
 import { reducers } from './stores';
 import { LoginEffects } from './stores/login/login.effects';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -41,7 +44,9 @@ import { LoginEffects } from './stores/login/login.effects';
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MdbCheckboxModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatListModule,
     AngularMaterialModule,
     ReactiveFormsModule,
     FormsModule,
