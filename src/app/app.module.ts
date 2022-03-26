@@ -31,6 +31,7 @@ import { LoginEffects } from './stores/login/login.effects';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { MatListModule } from '@angular/material/list';
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
+    MatFormFieldModule,
     AngularMaterialModule,
     ReactiveFormsModule,
     FormsModule,
