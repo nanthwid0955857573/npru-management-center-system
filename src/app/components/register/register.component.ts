@@ -10,7 +10,7 @@ import { RegisterSystemService } from '../../services/register/register-system.s
 
 export class RegisterComponent implements OnInit {
   registerForm:FormGroup;
-  Roles:any = [
+  Roles:any= [
    "admin",
    "author",
    "reader",
