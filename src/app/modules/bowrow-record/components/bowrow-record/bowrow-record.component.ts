@@ -5,13 +5,24 @@ import { ListReader } from '../../../../../app/interfaces/list-reader-data';
 @Component({
   selector: 'app-bowrow-record',
   template: `
-  <div class="header">
-  <h2>Blog Name</h2>
-  </div>
-  <div class="container">
-    <div class="g-block-1"><mat-card>Simple card 1</mat-card></div>
-    <div class="g-block-2"><mat-card>Simple card 2</mat-card></div>
-  </div>
+ 
+        
+ <h1>A Five Items Grid Layout</h1>
+
+<div class="grid-container">
+  <div class="grid-item item1">1</div>
+  <div class="grid-item item2">2</div>
+  <div class="grid-item item3">3</div>  
+  <div class="grid-item item4">4</div>
+  <div class="grid-item item5">5</div>
+</div>
+<div class="grid-container">
+  <!-- <div class="grid-item item1">1</div>
+  <div class="grid-item item2">2</div>
+  <div class="grid-item item3">3</div>  
+  <div class="grid-item item4">4</div> -->
+  <div class="grid-item item1">1</div>
+</div>
   `,
   styleUrls: ['./bowrow-record.component.css']
 })
